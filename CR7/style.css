@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body::-webkit-scrollbar{
+    /* background-color: transparent; */
+    background-image: url(BG.jpg);
+    background-size: cover;
+    filter: blur(50px);
+}
+
+body::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(57, 7, 7),rgb(16, 16, 46),gray);
+    border-radius: 10px;
+    border-style: groove;
+    filter: blur(50px);
+}
+
+.container {
+    min-height: 100vh;
+    border: 2px solid #000;
+    /* background-color: black; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.563), rgba(39, 27, 213, 0.273)),
+    url(BG.jpg);
+    background-size: cover;
+}
+
+.image_container img{
+    transition: all ease 5s;
+}
+
+.image_container:hover img{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.top-section {
+    display: flex;
+    margin-top: 100px;
+    justify-content:space-between ;
+    /* align-items: flex-end; */
+    align-items: center;
+}
+
+.top-section h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    /* -webkit-text-stroke: 0.5px #fff;
+    color: transparent;
+    font-family: arial; */
+}
+
+.top-section h4{
+    font-size: 30px;
+    font-weight: 600;
+    /* color: #C85250; */
+    color: gray;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+/* .main-line{
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 80px;
+    padding-left: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.main-line p{
+    color: gray;
+} */
+
+.image_container{
+    border-radius: 50%;
+    overflow: hidden;
+    filter: contrast(2);
+}
+
+.image_container, img {
+    width: 300px;
+    height: 320px;
+}
+
+.about_section{
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.about_section h2{
+    margin-bottom: 5px;
+    font-size: 30px;
+    
+}
+
+.about_section p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    /* color: #EEEDE7; */
+    color: gray;
+}
+
+.about_section ul{
+    font-size: 20px;
+    margin-bottom: 30px;
+    /* color: #EEEDE7; */
+    color: gray;
+}
+
+.about_section li{
+    font-size: 20px;
+    margin-bottom: 30px;
+    /* color: #EEEDE7; */
+    color: gray;
+}
+/* ............................................................................... */
+/* #cell{ */
+    /* min-height: 100vh;
+    min-width: 20vw; */
+    /* background-image: linear-gradient(rgba(196, 185, 185, 0.5), rgba(240, 53, 53, 0.5)),
+     url(https://wallpaperheart.com/wp-content/uploads/2018/03/Cristiano-Ronaldo-Wallpaper-Hd-Pics-Backgrounds.jpg);
+    background-size: cover; */
+    /* filter: contrast(2);
+    border-radius: 20px;
+} */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+
+/* ........................................................................................... */
+footer{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #000; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.914), rgba(197, 22, 220, 0.273)),
+     url(meadow-2184989_640.jpg);
+    background-size: cover;
+}
+
+#img2 img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100px;
+    width: 100px;
+    transition: all ease 5s;
+  
+}
+
+#img2:hover img{
+     scale: 1.2;
+     cursor: pointer;
+}
+
+.txt h3{
+    padding-left: 20px;
+    color: white;
+}
+
+.txt a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+ a:hover {
+    color: #fff;
+ }
+
+ @media (max-width:480px){
+    
+ }
+ @media (min-width: 481px)and(max-width:767px){
+    
+ }
+ @media (min-width: 768px)and(max-width:991px){
+    
+ }
+ @media (min-width: 992px)and(max-width:1199px){
+
+ }
+ @media (min-width: 1920px){
+    
+ }
